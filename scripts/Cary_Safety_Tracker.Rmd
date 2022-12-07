@@ -248,17 +248,17 @@ You can click any neighborhood to see detailed numbers or the buttons at the bot
 
 # Set bins for numbers of crimes for murders map
 murderbins1 <- c(0,
-                3,
-                8,
-                10,
-                15,
-                30)
-murderbins2 <- c(0,
                 1,
+                2,
                 3,
                 5,
-                10,
-                25)
+                10)
+murderbins2 <- c(0,
+                1,
+                2,
+                3,
+                5,
+                10)
 murderpal1 <- colorBin(c("#aecfe6",
                              "#2787d6",
                              "#0058f6",
@@ -346,7 +346,7 @@ cary_murder_map <- leaflet(murders_district, options = leafletOptions(zoomContro
   htmlwidgets::onRender("function(el, x) {
 L.control.zoom({ position: 'topright' }).addTo(this)
 }") %>%
-  setView(-78.815, 35.7915, zoom = 11.5) %>% 
+  setView(-78.815, 35.7915, zoom = 12) %>% 
   addProviderTiles(provider = "CartoDB.Positron") %>%
   addPolygons(color = "white", 
               popup = murderlabel,

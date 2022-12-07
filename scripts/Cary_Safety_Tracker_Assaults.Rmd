@@ -403,6 +403,7 @@ cary_assault_map
 <!-- <subhead>Risk of assault and other violent crimes in Oakland </subhead> -->
 <br>
 <br>
-<iframe title="2021 violent crime rate comparison in select cities" aria-label="Bar Chart" id="datawrapper-chart-FZerv" src="https://datawrapper.dwcdn.net/FZerv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="628" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="2021 violent crime rate comparison in select cities" aria-label="Bar Chart" id="datawrapper-chart-sTBZI" src="https://datawrapper.dwcdn.net/sTBZI/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="628" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 <br>
 <br>

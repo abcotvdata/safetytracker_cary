@@ -239,17 +239,17 @@ Click on any neighborhood on the map to see detailed figures, rates and trends. 
 
 # Set bins for numbers of crimes for robberies map
 robberybins1 <- c(0,
-                50,
-                100,
-                200,
-                300,
-                500)
+                5,
+                8,
+                10,
+                20,
+                50)
 robberybins2 <- c(0,
-                25,
-                50,
-                100,
-                150,
-                200)
+                1,
+                2,
+                3,
+                5,
+                10)
 robberypal1 <- colorBin(c("#aecfe6",
                              "#2787d6",
                              "#0058f6",

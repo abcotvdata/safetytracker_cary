@@ -222,7 +222,7 @@ Per 100,000 people</p>
 <br>
 Burglaries over the last 12 months are <h8>`r ifelse(burglaries_city$inc_prior3yearavgtolast12>=0," up"," down")` `r ifelse(burglaries_city$inc_prior3yearavgtolast12>=0,burglaries_city$inc_prior3yearavgtolast12,substring(burglaries_city$inc_prior3yearavgtolast12,2))`%</h8> compared to the annual average over the last three years.
 
-The city averaged <h8>`r round(burglaries_city$last12mos/52,0)`</h8> burglaries a week over the last 12 months. In 2019, that number was <h8>`r round(burglaries_city$total19/52,0)`</h8> a week.
+The city averaged <h8>`r round(burglaries_city$last12mos/12,0)`</h8> burglaries a month over the last 12 months. In 2019, that number was <h8>`r round(burglaries_city$total19/12,0)`</h8> a month.
 
 <subhead>A closer look at Cary burglaries neighborhood by neighborhood</subhead>
 

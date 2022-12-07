@@ -1,5 +1,5 @@
 ---
-title: "ABC11 Raleigh Neighborhood Safety Tracker"
+title: "ABC11 Cary Neighborhood Safety Tracker"
 # author: "John Kelly"
 # date: Sys.time()
 output: html_document
@@ -18,7 +18,7 @@ library(sf)
 ```
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-![<popupchatter>Updated `r format(Sys.time(), '%B %d, %Y')` by the ABC11 Data Team</popupchatter>](https://github.com/abcotvdata/safetytracker_raleigh/raw/main/docs/wtvd_banner2.png)
+![<popupchatter>Updated `r format(Sys.time(), '%B %d, %Y')` by the ABC11 Data Team</popupchatter>](https://github.com/abcotvdata/safetytracker_cary/raw/main/docs/wtvd_banner2.png)
 
 ```{css, echo=FALSE}
 
@@ -184,20 +184,19 @@ th {
    }
 ```
 
-<h2>ABC11 is tracking crime and safety across Raleigh and in your neighborhood. 
-<br>You can choose which crime to explore: <select onchange="window.location=this.value">
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">Homicides</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Assaults.html">Assaults</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_AutoThefts.html">Vehicle Thefts</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Burglaries.html">Burglaries</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Robberies.html">Robberies</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_SexualAssaults.html">Sexual Assaults</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Thefts.html">Thefts</option>
+<h2>ABC11 is tracking crime and safety across Cary and in your neighborhood. 
+<br>You can choose which crime to examine: <select onchange="window.location=this.value">
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Assaults.html">Assaults</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_AutoThefts.html">Vehicle Thefts</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Burglaries.html">Burglaries</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker.html">Homicides</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Robberies.html">Robberies</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Thefts.html">Thefts</option>
 </select></h2>
 <h2>Choose a different city to explore: <select onchange="window.location=this.value">
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker.html">Cary</option>
 <option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">Raleigh</option>
 <option value="https://abcotvdata.github.io/safetytracker_durham/Durham_Safety_Tracker.html">Durham</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">More coming soon!</option>
 </select></h2>
 
 <div class="cardContainer">
@@ -229,7 +228,7 @@ The murder rate over the last 12 months is<h8>`r ifelse(murders_city$inc_prior3y
 
 The city averaged <h8>`r round(murders_city$last12mos/12,0)`</h8> homicides a month over the last year. In 2019, that number was <h8>`r round(murders_city$total19/12,0)`</h8> per month.
 
-One way to think about the danger: three years ago, the murder rate was <h8>`r murders_city$rate19`</h8> per 100,000 residents. That's about one third the likelihood of someone dying in a vehicle crash in North Carolina. In the wake of the pandemic, a person's chance of being murdered in Raleigh has risen to about half of the risk of a fatal traffic crash.
+One way to think about the danger: three years ago, the murder rate was <h8>`r murders_city$rate19`</h8> per 100,000 residents. That's about one third the likelihood of someone dying in a vehicle crash in North Carolina. In the wake of the pandemic, a person's chance of being murdered in Cary has risen to about half of the risk of a fatal traffic crash.
 
 The risk remains much lower than most other leading causes of death in the state.
 <br>
@@ -240,7 +239,7 @@ The risk remains much lower than most other leading causes of death in the state
 <br>
 The risk is not the same neighborhood to neighborhood.
 
-ABC11's data team looked at the Raleigh Police Department's data by neighborhood from 2019 through `r format(asofdate, "%B %d, %Y")`.
+ABC11's data team looked at the Cary Police Department's data by neighborhood from 2019 through `r format(asofdate, "%B %d, %Y")`.
 
 <subhead>A closer look at homicides by police district</subhead>
 
@@ -348,11 +347,11 @@ murders_district$rate_prior3years,
 
 
 # Creating police districts map for types of crimes
-raleigh_murder_map <- leaflet(murders_district, options = leafletOptions(zoomControl = FALSE, zoomSnap = 0.5, zoomDelta=0.5)) %>%
+cary_murder_map <- leaflet(murders_district, options = leafletOptions(zoomControl = FALSE, zoomSnap = 0.5, zoomDelta=0.5)) %>%
   htmlwidgets::onRender("function(el, x) {
 L.control.zoom({ position: 'topright' }).addTo(this)
 }") %>%
-  setView(-78.65, 35.79, zoom = 11.5) %>% 
+  setView(-78.815, 35.7915, zoom = 11.5) %>% 
   addProviderTiles(provider = "CartoDB.Positron") %>%
   addPolygons(color = "white", 
               popup = murderlabel,
@@ -410,7 +409,7 @@ L.control.zoom({ position: 'topright' }).addTo(this)
          this.on('baselayerchange', el => updateLegend());
       }"
    )
-raleigh_murder_map
+cary_murder_map
 ```
 <br>
 <br>

@@ -10,9 +10,9 @@ murders_district <- readRDS("scripts/rds/murders_district.rds")
 murders_city <- readRDS("scripts/rds/murders_city.rds")
 asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker.Rmd', 
+rmarkdown::render('scripts/Cary_Safety_Tracker.Rmd', 
                   output_dir = "docs",
-                  output_file = 'Raleigh_Safety_Tracker.html')
+                  output_file = 'Cary_Safety_Tracker.html')
 
 # BURGLARIES
 # Load RDS
@@ -20,9 +20,9 @@ burglaries_district <- readRDS("scripts/rds/burglaries_district.rds")
 burglaries_city <- readRDS("scripts/rds/burglaries_city.rds")
 asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker_Burglaries.Rmd', 
+rmarkdown::render('scripts/Cary_Safety_Tracker_Burglaries.Rmd', 
                   output_dir = "docs",
-                  output_file = "Raleigh_Safety_Tracker_Burglaries.html")
+                  output_file = "Cary_Safety_Tracker_Burglaries.html")
 
 # THEFTS
 # Load RDS
@@ -30,9 +30,9 @@ thefts_district <- readRDS("scripts/rds/thefts_district.rds")
 thefts_city <- readRDS("scripts/rds/thefts_city.rds")
 asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker_Thefts.Rmd', 
+rmarkdown::render('scripts/Cary_Safety_Tracker_Thefts.Rmd', 
                   output_dir = "docs",
-                  output_file = 'Raleigh_Safety_Tracker_Thefts.html')
+                  output_file = 'Cary_Safety_Tracker_Thefts.html')
 
 # AUTO THEFTS
 # Load RDS
@@ -40,9 +40,9 @@ autothefts_district <- readRDS("scripts/rds/autothefts_district.rds")
 autothefts_city <- readRDS("scripts/rds/autothefts_city.rds")
 asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker_AutoThefts.Rmd', 
+rmarkdown::render('scripts/Cary_Safety_Tracker_AutoThefts.Rmd', 
                   output_dir = "docs",
-                  output_file = 'Raleigh_Safety_Tracker_AutoThefts.html')
+                  output_file = 'Cary_Safety_Tracker_AutoThefts.html')
 
 # ROBBERIES
 # Load RDS
@@ -50,9 +50,9 @@ robberies_district <- readRDS("scripts/rds/robberies_district.rds")
 robberies_city <- readRDS("scripts/rds/robberies_city.rds")
 asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker_Robberies.Rmd', 
+rmarkdown::render('scripts/Cary_Safety_Tracker_Robberies.Rmd', 
                   output_dir = "docs",
-                  output_file = 'Raleigh_Safety_Tracker_Robberies.html')
+                  output_file = 'Cary_Safety_Tracker_Robberies.html')
 
 # ASSAULTS
 # Load RDS
@@ -60,16 +60,16 @@ assaults_district <- readRDS("scripts/rds/assaults_district.rds")
 assaults_city <- readRDS("scripts/rds/assaults_city.rds")
 asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker_Assaults.Rmd', 
+rmarkdown::render('scripts/Cary_Safety_Tracker_Assaults.Rmd', 
                   output_dir = "docs",
-                  output_file = 'Raleigh_Safety_Tracker_Assaults.html')
+                  output_file = 'Cary_Safety_Tracker_Assaults.html')
 
 # SEXUAL ASSAULTS
 # Load RDS
-sexassaults_district <- readRDS("scripts/rds/sexassaults_district.rds")
-sexassaults_city <- readRDS("scripts/rds/sexassaults_city.rds")
-asofdate <- readRDS("scripts/rds/asofdate.rds")
+#sexassaults_district <- readRDS("scripts/rds/sexassaults_district.rds")
+#sexassaults_city <- readRDS("scripts/rds/sexassaults_city.rds")
+#asofdate <- readRDS("scripts/rds/asofdate.rds")
 # Render page
-rmarkdown::render('scripts/Raleigh_Safety_Tracker_SexualAssaults.Rmd', 
-                  output_dir = "docs",
-                  output_file = 'Raleigh_Safety_Tracker_SexualAssaults.html')
+#rmarkdown::render('scripts/Cary_Safety_Tracker_SexualAssaults.Rmd', 
+#                  output_dir = "docs",
+#                  output_file = 'Cary_Safety_Tracker_SexualAssaults.html')

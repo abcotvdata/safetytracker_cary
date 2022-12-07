@@ -1,5 +1,5 @@
 ---
-title: "ABC11 Raleigh Neighborhood Safety Tracker"
+title: "ABC11 Cary Neighborhood Safety Tracker"
 # author: "John Kelly"
 # date: Sys.time()
 output: html_document
@@ -18,7 +18,7 @@ library(sf)
 ```
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-![<popupchatter>Updated `r format(Sys.time(), '%B %d, %Y')` by the ABC11 Data Team</popupchatter>](https://github.com/abcotvdata/safetytracker_raleigh/raw/main/docs/wtvd_banner2.png)
+![<popupchatter>Updated `r format(Sys.time(), '%B %d, %Y')` by the ABC11 Data Team</popupchatter>](https://github.com/abcotvdata/safetytracker_cary/raw/main/docs/wtvd_banner2.png)
 ```{css, echo=FALSE}
 
 h1.title {
@@ -182,21 +182,19 @@ th {
       }
    }
 ```
-
-<h2>ABC11 is tracking crime and safety across Raleigh and in your neighborhood. 
+<h2>ABC11 is tracking crime and safety across Cary and in your neighborhood. 
 <br>You can choose which crime to examine: <select onchange="window.location=this.value">
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Robberies.html">Robberies</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Assaults.html">Assaults</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_AutoThefts.html">Vehicle Thefts</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Burglaries.html">Burglaries</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">Homicides</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_SexualAssaults.html">Sexual Assaults</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker_Thefts.html">Thefts</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Assaults.html">Assaults</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_AutoThefts.html">Vehicle Thefts</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Burglaries.html">Burglaries</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker.html">Homicides</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Robberies.html">Robberies</option>
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker_Thefts.html">Thefts</option>
 </select></h2>
 <h2>Choose a different city to explore: <select onchange="window.location=this.value">
+<option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker.html">Cary</option>
 <option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">Raleigh</option>
 <option value="https://abcotvdata.github.io/safetytracker_durham/Durham_Safety_Tracker.html">Durham</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">More coming soon!</option>
 </select></h2>
 
 <div class="cardContainer">
@@ -227,9 +225,9 @@ The city averaged <h8>`r round(robberies_city$last12mos/52,0)`</h8> robberies a 
 
 Robbery is generally defined by police as taking something of value from someone by force or threatening force. So while someone taking a smartphone from someone's bag would be theft, taking it while pointing a firearm at the person would be robbery.
 
-<subhead>A closer look at Raleigh robberies neighborhood by neighborhood</subhead>
+<subhead>A closer look at Cary robberies neighborhood by neighborhood</subhead>
 
-The risk is not the same neighborhood to neighborhood. ABC11's data team looked at the Raleigh Police Department's data by neighborhood from 2019 through `r format(asofdate, "%B %d, %Y")`.
+The risk is not the same neighborhood to neighborhood. ABC11's data team looked at the Cary Police Department's data by neighborhood from 2019 through `r format(asofdate, "%B %d, %Y")`.
 
 The map color-codes each neighborhood by the robbery rate over the last 12 months. The three darker blues represent neighborhoods with robbery rates that are higher than the citywide rate. You can also click the box in the bottom right corner to see neighborhoods by the number of robberies.
 
@@ -332,11 +330,11 @@ round(robberies_district$rate_prior3years,0),
 </table>")
 
 # Creating police districts map for types of crimes
-raleigh_robbery_map <- leaflet(robberies_district, options = leafletOptions(zoomControl = FALSE, zoomSnap = 0.5, zoomDelta=0.5)) %>%
+cary_robbery_map <- leaflet(robberies_district, options = leafletOptions(zoomControl = FALSE, zoomSnap = 0.5, zoomDelta=0.5)) %>%
   htmlwidgets::onRender("function(el, x) {
 L.control.zoom({ position: 'topright' }).addTo(this)
 }") %>%
-  setView(-78.65, 35.79, zoom = 11.5) %>% 
+  setView(-78.815, 35.7915, zoom = 11.5) %>% 
   addProviderTiles(provider = "CartoDB.Positron") %>%
   addPolygons(color = "white", 
               popup = robberylabel,
@@ -394,7 +392,7 @@ L.control.zoom({ position: 'topright' }).addTo(this)
          this.on('baselayerchange', el => updateLegend());
       }"
    )
-raleigh_robbery_map
+cary_robbery_map
 ```
 <br>
 <br>

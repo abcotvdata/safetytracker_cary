@@ -223,7 +223,7 @@ Per 100,000 people</p>
 <br>
 Aggravated assaults over the last 12 months are <h8>`r ifelse(assaults_city$inc_prior3yearavgtolast12>=0," up"," down")` `r ifelse(assaults_city$inc_prior3yearavgtolast12>=0,assaults_city$inc_prior3yearavgtolast12,substring(assaults_city$inc_prior3yearavgtolast12,2))`%</h8> compared to the annual average over the last three years.
 
-The city averaged <h8>`r prettyNum(round(assaults_city$last12mos/52,0), big.mark=",")`</h8> aggravated assaults a week over the last 12 months. In 2019, that number was <h8>`r prettyNum(round(assaults_city$total19/52,0), big.mark=",")`</h8> a week.
+The city averaged <h8>`r prettyNum(round(assaults_city$last12mos/12,0), big.mark=",")`</h8> aggravated assaults a month over the last 12 months. In 2019, that number was <h8>`r prettyNum(round(assaults_city$total19/12,0), big.mark=",")`</h8> a month.
 
 The totals include only aggravated assaults, which police generally define as someone being attacked or seriously injured by another person, whether or not they used a firearm or other weapon.
 

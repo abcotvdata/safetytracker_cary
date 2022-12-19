@@ -22,7 +22,7 @@ jobs:
         run: |
           brew install gdal
       - name: Install dependencies and packages
-        run: Rscript -e 'install.packages(c("sf","zoo","janitor","tidyverse","readxl","leaflet","leaflet.extras","leaflet.providers","htmlwidgets","htmltools","lubridate"))'
+        run: Rscript -e 'install.packages(c("sf","janitor","tidyverse","readxl","leaflet","leaflet.extras","leaflet.providers","htmlwidgets","htmltools","lubridate"))'
       - name: Get daily crime data and compile
         run: Rscript scripts/process_cary_crime.R
       - name: Render all markdowns from central script

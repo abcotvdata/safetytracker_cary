@@ -95,7 +95,7 @@ Aggravated Assault,2022-09-01,15
 Aggravated Assault,2022-10-01,19
 Aggravated Assault,2022-11-01,16
 Aggravated Assault,2022-12-01,7
-Aggravated Assault,2023-01-01,5
+Aggravated Assault,2023-01-01,6
 All Other,2015-01-01,256
 All Other,2015-02-01,198
 All Other,2015-03-01,252
@@ -187,12 +187,12 @@ All Other,2022-04-01,187
 All Other,2022-05-01,227
 All Other,2022-06-01,198
 All Other,2022-07-01,206
-All Other,2022-08-01,174
-All Other,2022-09-01,190
+All Other,2022-08-01,175
+All Other,2022-09-01,191
 All Other,2022-10-01,181
 All Other,2022-11-01,206
-All Other,2022-12-01,215
-All Other,2023-01-01,53
+All Other,2022-12-01,217
+All Other,2023-01-01,60
 Arson,2015-01-01,1
 Arson,2015-02-01,1
 Arson,2015-09-01,1
@@ -318,6 +318,7 @@ Burglary,2022-09-01,10
 Burglary,2022-10-01,9
 Burglary,2022-11-01,16
 Burglary,2022-12-01,19
+Burglary,2023-01-01,3
 Larceny,2015-01-01,126
 Larceny,2015-02-01,110
 Larceny,2015-03-01,124
@@ -413,8 +414,8 @@ Larceny,2022-08-01,83
 Larceny,2022-09-01,103
 Larceny,2022-10-01,108
 Larceny,2022-11-01,114
-Larceny,2022-12-01,110
-Larceny,2023-01-01,15
+Larceny,2022-12-01,111
+Larceny,2023-01-01,20
 Motor Vehicle Theft,2015-01-01,8
 Motor Vehicle Theft,2015-02-01,6
 Motor Vehicle Theft,2015-03-01,4

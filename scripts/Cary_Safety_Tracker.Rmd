@@ -222,7 +222,7 @@ Per 100,000 people</p>
 </div>
 </div>
 <br>
-Homicides are extremely rare in Cary. There have been <h8>`r murders_city$last12mos`</h8> over the last 12 months.
+Homicides are extremely rare in Cary. There have been <h8>`r murders_city$last12mos`</h8> over the last 12 months, according to the latest data available from the Cary Police Department.
 
 In each of the last three years, the town experienced only 1 homicide.
 <br>

@@ -222,7 +222,7 @@ Per 100,000 people</p>
 </div>
 </div>
 <br>
-Thefts over the last 12 months are <h8>`r ifelse(thefts_city$inc_prior3yearavgtolast12>=0," up"," down")` `r ifelse(thefts_city$inc_prior3yearavgtolast12>=0,thefts_city$inc_prior3yearavgtolast12,substring(thefts_city$inc_prior3yearavgtolast12,2))`%</h8> compared to the annual average over the last three years.
+Thefts over the last 12 months are <h8>`r ifelse(thefts_city$inc_prior3yearavgtolast12>=0," up"," down")` `r ifelse(thefts_city$inc_prior3yearavgtolast12>=0,thefts_city$inc_prior3yearavgtolast12,substring(thefts_city$inc_prior3yearavgtolast12,2))`%</h8> compared to the annual average over the last three years, according to the latest data available from the Cary Police Department.
 
 The city averaged <h8>`r prettyNum(round(thefts_city$last12mos/52,0), big.mark=",")`</h8> thefts a week over the last 12 months. In 2019, that number was <h8>`r prettyNum(round(thefts_city$total19/52,0), big.mark=",")`</h8> a week.
 

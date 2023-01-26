@@ -219,7 +219,7 @@ Per 100,000 people</p>
 </div>
 </div>
 <br>
-Robberies over the last 12 months are <h8>`r ifelse(robberies_city$inc_prior3yearavgtolast12>=0," up"," down")` `r ifelse(robberies_city$inc_prior3yearavgtolast12>=0,robberies_city$inc_prior3yearavgtolast12,substring(robberies_city$inc_prior3yearavgtolast12,2))`%</h8> compared to the annual average over the last three years.
+Robberies over the last 12 months are <h8>`r ifelse(robberies_city$inc_prior3yearavgtolast12>=0," up"," down")` `r ifelse(robberies_city$inc_prior3yearavgtolast12>=0,robberies_city$inc_prior3yearavgtolast12,substring(robberies_city$inc_prior3yearavgtolast12,2))`%</h8> compared to the annual average over the last three years, according to the latest data available from the Cary Police Department.
 
 The city averaged about <h8>`r round(robberies_city$last12mos/12,0)`</h8> robberies a month over the last 12 months. In 2019, that number was about <h8>`r round(robberies_city$total19/12,0)`</h8> a month.
 

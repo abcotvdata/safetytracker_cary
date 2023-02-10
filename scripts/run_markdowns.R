@@ -63,13 +63,3 @@ asofdate <- readRDS("scripts/rds/asofdate.rds")
 rmarkdown::render('scripts/Cary_Safety_Tracker_Assaults.Rmd', 
                   output_dir = "docs",
                   output_file = 'Cary_Safety_Tracker_Assaults.html')
-
-# SEXUAL ASSAULTS
-# Load RDS
-#sexassaults_district <- readRDS("scripts/rds/sexassaults_district.rds")
-#sexassaults_city <- readRDS("scripts/rds/sexassaults_city.rds")
-#asofdate <- readRDS("scripts/rds/asofdate.rds")
-# Render page
-#rmarkdown::render('scripts/Cary_Safety_Tracker_SexualAssaults.Rmd', 
-#                  output_dir = "docs",
-#                  output_file = 'Cary_Safety_Tracker_SexualAssaults.html')

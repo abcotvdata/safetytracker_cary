@@ -206,7 +206,7 @@ th {
 <p>Through  `r format(asofdate, "%B %d")`</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Sexual Assaults<br>2019 to 2021<br>
+<p>Average Sexual Assaults<br>2020 to 2022<br>
 <bignumber>`r prettyNum(round(sexassaults_city$avg_prior3years,0), big.mark=",")`<br></bignumber><p>
 Yearly average</p>
 </div>
@@ -216,7 +216,7 @@ Yearly average</p>
 Per 100,000 people</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Sexual Assault Rate<br>2019 to 2021<br>
+<p>Average Sexual Assault Rate<br>2020 to 2022<br>
 <bignumber>`r sexassaults_city$rate_prior3years`<br></bignumber><p>
 Per 100,000 people</p>
 </div>

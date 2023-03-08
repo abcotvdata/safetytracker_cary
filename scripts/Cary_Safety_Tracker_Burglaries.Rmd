@@ -204,7 +204,7 @@ th {
 <p>Through  `r format(asofdate, "%B %d")`</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Burglaries<br>2019 to 2021<br>
+<p>Average Burglaries<br>2020 to 2022<br>
 <bignumber>`r prettyNum(round(burglaries_city$avg_prior3years,0), big.mark=",")`<br></bignumber><p>
 Yearly average</p>
 </div>
@@ -214,7 +214,7 @@ Yearly average</p>
 Per 100,000 people</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Burglary Rate<br>2019 to 2021<br>
+<p>Average Burglary Rate<br>2020 to 2022<br>
 <bignumber>`r round(burglaries_city$rate_prior3years,0)`<br></bignumber><p>
 Per 100,000 people</p>
 </div>
@@ -306,6 +306,15 @@ burglaries_district$total21,
 "</td>
 				<td>",
 round(burglaries_district$rate21,0),
+"</td>
+			</tr>
+									<tr>
+				<td>2022</td>
+				<td>",
+burglaries_district$total22,
+"</td>
+				<td>",
+round(burglaries_district$rate22,0),
 "</td>
 			</tr>
 						<tr>

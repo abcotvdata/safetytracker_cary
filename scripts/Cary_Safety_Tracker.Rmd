@@ -206,7 +206,7 @@ th {
 Through `r format(asofdate, "%B %d")`</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Homicides<br>2019 to 2021<br>
+<p>Average Homicides<br>2020 to 2022<br>
 <bignumber>`r prettyNum(round(murders_city$avg_prior3years,0), big.mark=",")`<br></bignumber><p>
 Per year</p>
 </div>
@@ -216,7 +216,7 @@ Per year</p>
 Per 100,000 people</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Homicide Rate<br>2019 to 2021<br>
+<p>Average Homicide Rate<br>2020 to 2022<br>
 <bignumber>`r murders_city$rate_prior3years`<br></bignumber><p>
 Per 100,000 people</p>
 </div>
@@ -318,6 +318,15 @@ murders_district$total21,
 "</td>
 				<td>",
 murders_district$rate21,
+"</td>
+			</tr>
+									<tr>
+				<td>2022</td>
+				<td>",
+murders_district$total22,
+"</td>
+				<td>",
+murders_district$rate22,
 "</td>
 			</tr>
 						<tr>

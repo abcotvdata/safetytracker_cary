@@ -1,5 +1,5 @@
 objectid,district,shape_st_area,shape_st_length,created_user,created_date,last_edited_user,last_edited_date,population,district_cpd,placename,category,total23,2015,2016,2017,2018,total19,total20,total21,total22,last12mos,total_prior3years,avg_prior3years,inc_19to22,inc_19tolast12,inc_22tolast12,inc_prior3yearavgtolast12,rate19,rate20,rate21,rate22,rate_last12,rate_prior3years
-7210,117,164950530.96148637,85642.31932851662,GIS,1667323453000,GIS,1667323453000,24000,CPDS,"Bond Park, Park Village, Brookstone and Parkway Pointe",Murder,0,1,0,0,0,0,0,0,0,0,0,0,NA,NA,NA,NA,0,0,0,0,0,0
+7210,117,164950530.96148637,85642.31932851662,GIS,1667323453000,GIS,1667323453000,24000,CPDS,"Bond Park, Park Village, Brookstone and Parkway Pointe",Murder,0,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA,NA,0,0,0,0,0,0
 7214,111,232135521.46403223,259080.19435952336,GIS,1667323453000,GIS,1667323453000,14000,CPDN,"Harrison Park, Northwoods and Weston Parkway",Murder,0,1,0,0,0,0,0,0,0,0,0,0,NA,NA,NA,NA,0,0,0,0,0,0
 7215,122,236126387.25935683,269233.07073789317,GIS,1667323453000,GIS,1667323453000,23000,CPDN,"Cary Park Town Center, Southwest Cary and Cary Park",Murder,0,1,0,0,0,0,0,0,0,0,0,0,NA,NA,NA,NA,0,0,0,0,0,0
 7216,1,55350782.02761763,84698.1217344513,GIS,1667323453000,GIS,1667323453000,1000,MPD1,Unknown,Murder,0,0,0,0,0,0,0,0,0,0,0,0,NA,NA,NA,NA,0,0,0,0,0,0

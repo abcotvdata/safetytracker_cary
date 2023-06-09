@@ -193,7 +193,8 @@ th {
 </select></h2>
 <h2>Choose a different city to explore: <select onchange="window.location=this.value">
 <option value="https://abcotvdata.github.io/safetytracker_cary/Cary_Safety_Tracker.html">Cary</option>
-<option value="https://abcotvdata.github.io/safetytracker_raleigh/Raleigh_Safety_Tracker.html">Raleigh</option>
+<option value="https://abcotvdata.github.io/safetytracker_fayetteville/Fayetteville_Safety_Tracker.html">Fayetteville</option>
+<option value="https://abcotvdata.github.io/safetytracker_durham/Raleigh_Safety_Tracker.html">Raleigh</option>
 <option value="https://abcotvdata.github.io/safetytracker_durham/Durham_Safety_Tracker.html">Durham</option>
 </select></h2>
 

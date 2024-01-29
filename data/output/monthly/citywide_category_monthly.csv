@@ -212,11 +212,11 @@ All Other,2023-05-01,240
 All Other,2023-06-01,253
 All Other,2023-07-01,257
 All Other,2023-08-01,258
-All Other,2023-09-01,227
+All Other,2023-09-01,228
 All Other,2023-10-01,261
 All Other,2023-11-01,241
 All Other,2023-12-01,230
-All Other,2024-01-01,145
+All Other,2024-01-01,149
 Arson,2015-01-01,1
 Arson,2015-02-01,1
 Arson,2015-09-01,1
@@ -358,7 +358,7 @@ Burglary,2023-09-01,11
 Burglary,2023-10-01,21
 Burglary,2023-11-01,17
 Burglary,2023-12-01,13
-Burglary,2024-01-01,9
+Burglary,2024-01-01,10
 Larceny,2015-01-01,126
 Larceny,2015-02-01,110
 Larceny,2015-03-01,124
@@ -467,7 +467,7 @@ Larceny,2023-09-01,132
 Larceny,2023-10-01,142
 Larceny,2023-11-01,136
 Larceny,2023-12-01,147
-Larceny,2024-01-01,98
+Larceny,2024-01-01,101
 Motor Vehicle Theft,2015-01-01,8
 Motor Vehicle Theft,2015-02-01,6
 Motor Vehicle Theft,2015-03-01,4
@@ -677,3 +677,4 @@ Robbery,2023-09-01,1
 Robbery,2023-10-01,1
 Robbery,2023-11-01,2
 Robbery,2023-12-01,3
+Robbery,2024-01-01,1

@@ -113,6 +113,7 @@ Aggravated Assault,2024-03-01,5
 Aggravated Assault,2024-04-01,9
 Aggravated Assault,2024-05-01,6
 Aggravated Assault,2024-06-01,4
+Aggravated Assault,2024-07-01,1
 All Other,2015-01-01,256
 All Other,2015-02-01,198
 All Other,2015-03-01,252
@@ -141,7 +142,7 @@ All Other,2017-01-01,239
 All Other,2017-02-01,216
 All Other,2017-03-01,267
 All Other,2017-04-01,264
-All Other,2017-05-01,283
+All Other,2017-05-01,282
 All Other,2017-06-01,264
 All Other,2017-07-01,284
 All Other,2017-08-01,294
@@ -202,7 +203,7 @@ All Other,2022-02-01,197
 All Other,2022-03-01,189
 All Other,2022-04-01,188
 All Other,2022-05-01,228
-All Other,2022-06-01,201
+All Other,2022-06-01,200
 All Other,2022-07-01,207
 All Other,2022-08-01,177
 All Other,2022-09-01,196
@@ -215,7 +216,7 @@ All Other,2023-03-01,209
 All Other,2023-04-01,243
 All Other,2023-05-01,240
 All Other,2023-06-01,255
-All Other,2023-07-01,258
+All Other,2023-07-01,259
 All Other,2023-08-01,259
 All Other,2023-09-01,230
 All Other,2023-10-01,265
@@ -225,9 +226,9 @@ All Other,2024-01-01,244
 All Other,2024-02-01,231
 All Other,2024-03-01,246
 All Other,2024-04-01,242
-All Other,2024-05-01,266
-All Other,2024-06-01,274
-All Other,2024-07-01,17
+All Other,2024-05-01,269
+All Other,2024-06-01,275
+All Other,2024-07-01,65
 Arson,2015-01-01,1
 Arson,2015-02-01,1
 Arson,2015-09-01,1
@@ -486,12 +487,12 @@ Larceny,2023-10-01,142
 Larceny,2023-11-01,139
 Larceny,2023-12-01,151
 Larceny,2024-01-01,161
-Larceny,2024-02-01,124
+Larceny,2024-02-01,125
 Larceny,2024-03-01,148
-Larceny,2024-04-01,165
-Larceny,2024-05-01,181
-Larceny,2024-06-01,169
-Larceny,2024-07-01,12
+Larceny,2024-04-01,166
+Larceny,2024-05-01,182
+Larceny,2024-06-01,171
+Larceny,2024-07-01,23
 Motor Vehicle Theft,2015-01-01,8
 Motor Vehicle Theft,2015-02-01,6
 Motor Vehicle Theft,2015-03-01,4
@@ -593,7 +594,7 @@ Motor Vehicle Theft,2023-03-01,43
 Motor Vehicle Theft,2023-04-01,29
 Motor Vehicle Theft,2023-05-01,51
 Motor Vehicle Theft,2023-06-01,46
-Motor Vehicle Theft,2023-07-01,49
+Motor Vehicle Theft,2023-07-01,50
 Motor Vehicle Theft,2023-08-01,37
 Motor Vehicle Theft,2023-09-01,29
 Motor Vehicle Theft,2023-10-01,46
@@ -605,7 +606,7 @@ Motor Vehicle Theft,2024-03-01,32
 Motor Vehicle Theft,2024-04-01,25
 Motor Vehicle Theft,2024-05-01,16
 Motor Vehicle Theft,2024-06-01,26
-Motor Vehicle Theft,2024-07-01,4
+Motor Vehicle Theft,2024-07-01,9
 Murder,2015-05-01,1
 Murder,2015-06-01,1
 Murder,2015-12-01,2

@@ -116,7 +116,7 @@ Aggravated Assault,2024-06-01,4
 Aggravated Assault,2024-07-01,6
 Aggravated Assault,2024-08-01,2
 Aggravated Assault,2024-09-01,3
-Aggravated Assault,2024-10-01,1
+Aggravated Assault,2024-10-01,2
 All Other,2015-01-01,256
 All Other,2015-02-01,198
 All Other,2015-03-01,252
@@ -232,9 +232,9 @@ All Other,2024-04-01,244
 All Other,2024-05-01,276
 All Other,2024-06-01,288
 All Other,2024-07-01,277
-All Other,2024-08-01,294
-All Other,2024-09-01,291
-All Other,2024-10-01,30
+All Other,2024-08-01,297
+All Other,2024-09-01,295
+All Other,2024-10-01,39
 Arson,2015-01-01,1
 Arson,2015-02-01,1
 Arson,2015-09-01,1
@@ -502,11 +502,11 @@ Larceny,2024-02-01,125
 Larceny,2024-03-01,149
 Larceny,2024-04-01,167
 Larceny,2024-05-01,183
-Larceny,2024-06-01,187
+Larceny,2024-06-01,188
 Larceny,2024-07-01,121
-Larceny,2024-08-01,155
-Larceny,2024-09-01,174
-Larceny,2024-10-01,27
+Larceny,2024-08-01,157
+Larceny,2024-09-01,175
+Larceny,2024-10-01,28
 Motor Vehicle Theft,2015-01-01,8
 Motor Vehicle Theft,2015-02-01,6
 Motor Vehicle Theft,2015-03-01,4
@@ -623,7 +623,7 @@ Motor Vehicle Theft,2024-06-01,27
 Motor Vehicle Theft,2024-07-01,29
 Motor Vehicle Theft,2024-08-01,14
 Motor Vehicle Theft,2024-09-01,35
-Motor Vehicle Theft,2024-10-01,4
+Motor Vehicle Theft,2024-10-01,5
 Murder,2015-05-01,1
 Murder,2015-06-01,1
 Murder,2015-12-01,2
@@ -731,4 +731,4 @@ Robbery,2024-04-01,1
 Robbery,2024-05-01,1
 Robbery,2024-07-01,4
 Robbery,2024-09-01,1
-Robbery,2024-10-01,1
+Robbery,2024-10-01,3

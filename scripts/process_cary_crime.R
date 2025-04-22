@@ -15,10 +15,13 @@ cary_crime_old <- read_csv("data/source/cary_crime.csv") %>% janitor::clean_name
 
 cary_crime <- read_csv("data/source/cary_crime_new.csv") %>% janitor::clean_names()
 
+cary_crime <- cary_crime %>% select(-35)
+
 cary_crime <- rbind(cary_crime_old,cary_crime)
 
-cary_crime <- cary_crime[!duplicated(cary_crime), ]
-                    
+cary_crime <- cary_crime %>% distinct(ucr,incident_number,begin_date_of_occurrence, .keep_all = TRUE)
+
+
 cary_crime <- cary_crime %>% rename("category"="crime_category")
 cary_crime$category <- str_to_title(cary_crime$category)
   

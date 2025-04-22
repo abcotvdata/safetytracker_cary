@@ -205,7 +205,7 @@ th {
 <p>Through  `r format(asofdate, "%B %d")`</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Robberies<br>2020 to 2022<br>
+<p>Average Robberies<br>2022 to 2024<br>
 <bignumber>`r prettyNum(round(robberies_city$avg_prior3years,0), big.mark=",")`<br></bignumber><p>
 Yearly average</p>
 </div>
@@ -214,7 +214,7 @@ Yearly average</p>
 <bignumber>`r round(robberies_city$rate_last12,0)`<br></bignumber><p>Per 100,000 people</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Robbery Rate<br>2020 to 2022<br>
+<p>Average Robbery Rate<br>2022 to 2024<br>
 <bignumber>`r round(robberies_city$rate_prior3years,0)`<br></bignumber><p>
 Per 100,000 people</p>
 </div>
@@ -320,6 +320,25 @@ round(robberies_district$rate22,0),
 "</td>
 			</tr>
 						<tr>
+				<td>2023</td>
+				<td>",
+robberies_district$total23,
+"</td>
+				<td>",
+round(robberies_district$rate23,0),
+"</td>
+			</tr>
+						<tr>
+				<td>2024</td>
+				<td>",
+robberies_district$total24,
+"</td>
+				<td>",
+round(robberies_district$rate24,0),
+"</td>
+			</tr>
+						<tr>
+
 				<td>Last 12 months</td>
 				<td>",
 robberies_district$last12mos,

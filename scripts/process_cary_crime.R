@@ -8,11 +8,17 @@ library(sf)
 # https://data.townofcary.org/explore/dataset/cpd-incidents/download/?format=csv&timezone=America/New_York&lang=en&use_labels_for_header=true&csv_separator=%2C
 
 options(timeout=120)
-download.file("https://data.townofcary.org/explore/dataset/cpd-incidents/download/?format=csv&timezone=America/New_York&lang=en&use_labels_for_header=true&csv_separator=%2C",
-              "data/source/cary_crime.csv")
+download.file("https://data.townofcary.org/api/explore/v2.1/catalog/datasets/cpd-incidents/exports/csv?lang=en&timezone=US%2FEastern&use_labels=true&delimiter=%2C",
+              "data/source/cary_crime_new.csv")
+#load in previous years from saved data
+cary_crime_old <- read_csv("data/source/cary_crime.csv") %>% janitor::clean_names()
 
-cary_crime <- read_csv("data/source/cary_crime.csv") %>% janitor::clean_names()
+cary_crime <- read_csv("data/source/cary_crime_new.csv") %>% janitor::clean_names()
 
+cary_crime <- rbind(cary_crime_old,cary_crime)
+
+cary_crime <- cary_crime[!duplicated(cary_crime), ]
+                    
 cary_crime <- cary_crime %>% rename("category"="crime_category")
 cary_crime$category <- str_to_title(cary_crime$category)
   
@@ -116,7 +122,7 @@ citywide_category <- cary_crime %>%
   pivot_wider(names_from=year, values_from=count)
 # rename the year columns
 citywide_category <- citywide_category %>% 
-  rename("total15" = "2015",
+  rename("total15 = "2015",
          "total16" = "2016",
          "total17" = "2017",
          "total18" = "2018",
@@ -249,7 +255,7 @@ district_detailed <- cary_crime %>%
   pivot_wider(names_from=year, values_from=count)
 # rename the year columns
 district_detailed <- district_detailed %>% 
-  rename("total15" = "2015",
+  rename("total15" = "2015"
          "total16" = "2016",
          "total17" = "2017",
          "total18" = "2018",

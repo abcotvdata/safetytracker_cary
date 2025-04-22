@@ -207,7 +207,7 @@ th {
 <p>Through  `r format(asofdate, "%B %d")`</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Thefts<br>2020 to 2022<br>
+<p>Average Thefts<br>2022 to 2024<br>
 <bignumber>`r prettyNum(round(thefts_city$avg_prior3years,0), big.mark=",")`<br></bignumber><p>
 Yearly average</p>
 </div>
@@ -217,7 +217,7 @@ Yearly average</p>
 Per 100,000 people</p>
 </div>
 <div class="card" style="background-color:#99a0a5;">
-<p>Average Theft Rate<br>2020 to 2022<br>
+<p>Average Theft Rate<br>2022 to 2024<br>
 <bignumber>`r prettyNum(round(thefts_city$rate_prior3years,0),big.mark=",")`<br></bignumber><p>
 Per 100,000 people</p>
 </div>
@@ -317,6 +317,24 @@ prettyNum(thefts_district$total22, big.mark=","),
 "</td>
 				<td>",
 prettyNum(round(thefts_district$rate22,0), big.mark=","),
+"</td>
+			</tr>
+						<tr>
+				<td>2023</td>
+				<td>",
+prettyNum(thefts_district$total23, big.mark=","),
+"</td>
+				<td>",
+prettyNum(round(thefts_district$rate23,0), big.mark=","),
+"</td>
+			</tr>
+						<tr>
+				<td>2024</td>
+				<td>",
+prettyNum(thefts_district$total24, big.mark=","),
+"</td>
+				<td>",
+prettyNum(round(thefts_district$rate24,0), big.mark=","),
 "</td>
 			</tr>
 						<tr>
